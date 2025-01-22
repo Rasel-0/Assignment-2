@@ -16,14 +16,14 @@ body {
   max-width: 1440px;
   margin: 0 auto;
 }
-.dark {
-  color: #111111;
-}
 .orange {
-  color: #fea301;
+    color: #fea301;
 }
 .blue {
-  color: #01acfd;
+    color: #01acfd;
+}
+.dark {
+  color: #111111;
 }
 .size {
   width: 80%;
@@ -33,7 +33,6 @@ body {
 }
 nav {
   box-sizing: border-box;
-  border: 2px solid black;
   margin: 0 auto;
   width: 80%;
   padding: 0;
@@ -112,9 +111,110 @@ nav {
 }
 
 /* <!-- home-page-main part --> */
-section>div>h1{
+.home-page{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    /* justify-content: space-between; */
+}
+.home-page>div>h1{
     font-size: 56px;
     font-weight: bold;
-    line-height: 61px;  
+    line-height: 61px;
 }
-section>div>h1>.one{}
+.home-page>div>p{
+    font-size: 1.25rem;
+    margin-bottom: 24px 0;  
+}
+.home-page>div>.btn{
+    padding: 10px 47px;
+    background: #111111;
+}
+
+/* second-page */
+.second-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.second-page>h1{
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 57.5px;
+    margin-bottom: 80px;
+}
+.scroll{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+.scroll div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #FEA301;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 40px;
+}
+.card-holder{
+    gap: 28px;
+    display: flex;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.img-con{
+    margin-top: 50px;
+    height: 137px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.card{
+    border-radius: 19px;
+}
+.card>h3{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 30.7px;
+}
+.card>p{
+    font-size: 15px;
+    color: rgba(128, 128, 128, 1);
+    font-weight: 500;
+    line-height: 28px;
+}
+.card>button{
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 35px;
+    margin-bottom: 50px;
+
+
+}
+.card>.r1{
+    color: rgba(100, 200, 255, 1);
+}
+.card>.r2{
+    color: rgba(240, 170, 0, 1);
+}
+.card>.r3{
+    color: rgba(135, 0, 255, 1);
+}
+.c1,.c3{
+    background: linear-gradient(rgb(222, 240, 255),white 40%);
+    border: 1px solid rgba(222, 245, 255, 1);
+}
+.c2{
+    background: linear-gradient(#FFF4DC,white 40%);
+    border: 1px solid #FFF4DC;
+}
