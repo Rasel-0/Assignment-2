@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kaushan+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Sofia&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.quicksand {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html,
+body {
+  font-size: 16px;
+  margin: 0px;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.dark {
+  color: #111111;
+}
+.orange {
+  color: #fea301;
+}
+.blue {
+  color: #01acfd;
+}
+.size {
+  width: 80%;
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+nav {
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-1 > p {
+  margin: 0px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 30px;
+  color: #111111;
+}
+.nav-2 > ul {
+  gap: 32px;
+  display: flex;
+  list-style: none;
+}
+.nav-2 > ul > li {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.nav-2 > ul > .l1 {
+  color: #fea301;
+  font-weight: bold;
+}
+.nav-2 > ul > .l2 {
+  color: #01acfd;
+}
+.nav-2 > ul > .l3 {
+  color: rgba(5, 212, 223, 1);
+}
+.nav-2 > ul > .l4 {
+  color: rgba(93, 88, 239, 1);
+}
+.btn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 10px 60.5px;
+  border: none;
+  color: white;
+  background: #fea301;
+  border-radius: 12px;
+}
+.icon {
+  display: none;
+}
+@media screen and (max-width: 512px) {
+  body {
+    background: #0000e137;
+  }
+  nav {
+    width: 100%;
+  }
+  nav > div {
+    margin: 16px;
+  }
+  .nav-1 p,
+  li,
+  button,
+  .icon {
+    display: none;
+  }
+  .icon {
+    display: flex;
+  }
+}
+
+/* <!-- home-page-main part --> */
+section>div>h1{
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 61px;  
+}
+section>div>h1>.one{}
