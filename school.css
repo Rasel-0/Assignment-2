@@ -7,8 +7,7 @@
   font-style: normal;
 }
 
-html,
-body {
+html,body {
   font-size: 16px;
   margin: 0px;
 }
@@ -17,23 +16,27 @@ body {
   margin: 0 auto;
 }
 .orange {
-    color: #fea301;
+  color: #fea301;
 }
 .blue {
-    color: #01acfd;
+  color: #01acfd;
 }
 .dark {
   color: #111111;
 }
 .size {
   width: 80%;
-  border: 2px solid black;
   box-sizing: border-box;
   margin: 0 auto;
 }
+.b {
+  border: 2px solid black;
+}
+
+
 nav {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 80%;
   padding: 0;
   display: flex;
@@ -45,6 +48,8 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
+.nav-1>img{width: 100%;}
+
 .nav-1 > p {
   margin: 0px;
   font-size: 2rem;
@@ -89,132 +94,293 @@ nav {
 .icon {
   display: none;
 }
-@media screen and (max-width: 512px) {
-  body {
-    background: #0000e137;
-  }
-  nav {
-    width: 100%;
-  }
-  nav > div {
-    margin: 16px;
-  }
-  .nav-1 p,
-  li,
-  button,
-  .icon {
-    display: none;
-  }
-  .icon {
-    display: flex;
-  }
-}
+
+
+
+
+
+
 
 /* <!-- home-page-main part --> */
-.home-page{
-    display: flex;
-    align-items: center;
-    margin-bottom: 60px;
-    /* justify-content: space-between; */
+.home-page {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
-.home-page>div>h1{
-    font-size: 56px;
-    font-weight: bold;
-    line-height: 61px;
+.home-page > div > h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 61px;
 }
-.home-page>div>p{
-    font-size: 1.25rem;
-    margin-bottom: 24px 0;  
+.home-page > div > p {
+  font-size: 1.25rem;
+  margin-bottom: 24px 0;
 }
-.home-page>div>.btn{
-    padding: 10px 47px;
-    background: #111111;
+.home-page > div > .btn {
+  padding: 10px 47px;
+  background: #111111;
+}
+.home-page>img{
+  width: 100%;
 }
 
 /* second-page */
-.second-page{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 200px;
+.bg {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(/assets/bg.png);
+  background-position: top;
+  background-repeat: repeat;
 }
-.second-page>h1{
-    font-size: 46px;
-    font-weight: bold;
-    line-height: 57.5px;
-    margin-bottom: 80px;
+.second-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.scroll{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 60px;
+.second-page > h1 {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 57.5px;
+  margin-bottom: 80px;
 }
-.scroll div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    background: #FEA301;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    border-radius: 40px;
+.scroll {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 60px;
 }
-.card-holder{
-    gap: 28px;
-    display: flex;
-    text-align: center;
-    margin-bottom: 80px;
+.scroll div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: #fea301;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 40px;
 }
-.img-con{
-    margin-top: 50px;
-    height: 137px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 32px;
+.card-holder {
+  gap: 28px;
+  display: flex;
+  text-align: center;
+  margin-bottom: 80px;
 }
-.card{
-    border-radius: 19px;
+.img-con {
+  margin-top: 50px;
+  height: 140px;
+  width: 140px;
+  margin-bottom: 32px;
 }
-.card>h3{
-    font-size: 25px;
-    font-weight: bold;
-    line-height: 30.7px;
+.img-con>img{width: 100%;}
+.card {
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.card>p{
-    font-size: 15px;
-    color: rgba(128, 128, 128, 1);
-    font-weight: 500;
-    line-height: 28px;
+.card > h3 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30.7px;
 }
-.card>button{
-    border: none;
-    background: none;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 28px;
-    margin-top: 35px;
-    margin-bottom: 50px;
+.card > p {
+  font-size: 15px;
+  color: rgba(128, 128, 128, 1);
+  font-weight: 500;
+  line-height: 28px;
+}
+.card > button {
+  border: none;
+  background: none;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 28px;
+  margin-top: 35px;
+  margin-bottom: 50px;
+}
+
+.card > .r1 {
+  color: rgba(100, 200, 255, 1);
+}
+.card > .r2 {
+  color: rgba(240, 170, 0, 1);
+}
+.card > .r3 {
+  color: rgba(135, 0, 255, 1);
+}
+
+.c1,
+.c3 {
+  background: linear-gradient(rgb(222, 240, 255), white 40%);
+  border: 1px solid rgba(222, 245, 255, 1);
+}
+.c2 {
+  background: linear-gradient(#fff4dc, white 40%);
+  border: 1px solid #fff4dc;
+}
 
 
+@media screen and (max-width: 390px) {
+    nav {
+      width: 100%;
+      border: 1px solid #fea301;
+      margin-top: 0 ;
+      margin-bottom: 20px;
+    }
+    nav > div {
+      margin: 16px;
+    }
+    .nav-1 p,li,.contact,
+    .icon {
+      display: none;
+    }
+    .icon {
+      display: flex;
+    }
+    .home-page {
+        width: 100%;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 0px 20px;
+      }
+    .home-page>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .home-page span{
+        display: inline-block;
+      }
+      #head{
+        font-size: 2rem;
+        line-height: 40px;
+        text-align: center;
+        margin: 0px;
+        /* border: 2px solid red; */
+      }
+      .home-page > div > p {
+        text-align: center;
+        margin: 18px 0;
+        font-size: 0.9rem;
+        margin-bottom: 24px 0;
+      }
+      .home-page > div > .btn {
+        font-size: 1rem;
+        padding: 6px 24px;
+        background: #111111;
+      }
+      /* second-page  */
+      .bg {
+        background-image: none;
+      }
+      .second-page{
+        width: 100%;
+      }
+      .second-page > h1 {
+        font-size: 26px;
+        line-height: 40px;
+        margin: 40px 0 20px;
+      }
+      .scroll {
+        display: none; 
+      }
+      .card-holder {
+        margin: 0px 16px;
+        gap: 12px;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+   
+      .card > h3 {
+        font-size: 1rem;
+        line-height: 20.7px;
+        margin: 0;
+      }
+      .card > p {
+        font-size: 10px;
+        line-height: 19px;
+        margin: 22px 75px;
+      }
+      .card > button {
+        font-size: 10px;
+        line-height: 19px;
+        margin-top: 0px;
+        margin-bottom: 36px;
+      }
+      .img-con {
+        margin-top: 36px;
+        margin-bottom: 22px;
+        height: 93px;
+        width: 93px;
+
+      }
+      
+      }
+
+
+
+
+
+
+
+
+
+/* page-three  */
+.bg2 {
+  width: 100%;
+  background-image: url(/assets/bg.png),
+    linear-gradient(rgb(255, 255, 255), rgba(254, 163, 1, 0.3));
 }
-.card>.r1{
-    color: rgba(100, 200, 255, 1);
+.stories {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.card>.r2{
-    color: rgba(240, 170, 0, 1);
+.stories > h1 {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 58px;
+  margin-top: 60px;
 }
-.card>.r3{
-    color: rgba(135, 0, 255, 1);
+.stories > .btn {
+  padding: 10px 61px;
+  background: #111111;
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
-.c1,.c3{
-    background: linear-gradient(rgb(222, 240, 255),white 40%);
-    border: 1px solid rgba(222, 245, 255, 1);
+.story-holder,.sub-story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 19px;
 }
-.c2{
-    background: linear-gradient(#FFF4DC,white 40%);
-    border: 1px solid #FFF4DC;
+.story{
+    background: white;
+    border-radius: 16px;
 }
+.story>img{
+    border-radius: 16px 16px  0px 0px;
+    width: 100%;
+    }
+    /*
+.story h5{
+    margin: 0;
+    font-size: 15px;
+    margin-top: 33px;
+    margin-bottom: 28px;
+    font-weight: bold;
+    line-height: 29px;
+}
+#boro{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 58px;
+    margin-bottom: 48px;
+    text-align: left;
+} */
