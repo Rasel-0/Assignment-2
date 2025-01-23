@@ -129,8 +129,9 @@ nav {
   width: 100%;
   margin: 0 auto;
   background-image: url(/assets/bg.png);
-  background-position: top;
+  background-position: center;
   background-repeat: repeat;
+  background-size: cover;
 }
 .second-page {
   display: flex;
@@ -222,6 +223,124 @@ nav {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page-three  */
+.bg2 {
+  width: 100%;
+  background-image: url(/assets/bg.png),
+    linear-gradient(rgb(255, 255, 255), rgba(254, 163, 1, 0.3));
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+.stories {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stories > h1 {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 58px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.stories > .btn {
+  padding: 10px 61px;
+  background: #111111;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.story-holder,.sub-story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 19px;
+}
+.story{
+    background: white;
+    border-radius: 16px;
+}
+.story>h5{
+    font-size: 15px;
+    margin: 28px 38px 38px;
+    font-weight: bold;
+    line-height: 29px;
+    }  
+#main-story>h5{
+            margin: 50px 35px 48px ;
+            }
+#main-story>p{
+            color: rgba(102, 102, 102, 1);
+            font-weight: 500;
+            line-height: 28px;
+            margin:0 38px 20px;
+            }
+.story>img{
+    border-radius: 16px 16px  0px 0px;
+    width: 100%;
+    }
+    
+    #boro{
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 58px;
+    margin-bottom: 48px;
+    text-align: left;
+    } 
+   
+    
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 390px) {
     nav {
       width: 100%;
@@ -261,7 +380,6 @@ nav {
         line-height: 40px;
         text-align: center;
         margin: 0px;
-        /* border: 2px solid red; */
       }
       .home-page > div > p {
         text-align: center;
@@ -319,68 +437,56 @@ nav {
         width: 93px;
 
       }
+
+
+
+
+
+
+
+
+
+
+      /* page three  */
+      .stories,.story-holder,.sub-story {
+        width: 100%;   
+      }
+      .story-holder{
+        display: block;
+      }
+      .sub-story{
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 18 0px;
+        box-sizing: border-box;
+        padding: 0px 16px;
+      }
       
+      .stories > h1 {
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 57px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      #main-story{
+        display: none;
+      } 
+      .story>h5{
+        font-size: 9px;
+        margin: 22px 22px 18px;
+        line-height: 17px;
+        }
+        .stories > .btn {
+            font-size: 1rem;
+            line-height: 30px;
+            padding: 0px 37px;
+            background: #111111;
+            margin-top: 20px;
+            margin-bottom: 40px;
+          } 
+         
+        
       }
 
-
-
-
-
-
-
-
-
-/* page-three  */
-.bg2 {
-  width: 100%;
-  background-image: url(/assets/bg.png),
-    linear-gradient(rgb(255, 255, 255), rgba(254, 163, 1, 0.3));
-}
-.stories {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.stories > h1 {
-  font-size: 46px;
-  font-weight: bold;
-  line-height: 58px;
-  margin-top: 60px;
-}
-.stories > .btn {
-  padding: 10px 61px;
-  background: #111111;
-  margin-top: 80px;
-  margin-bottom: 60px;
-}
-.story-holder,.sub-story{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 19px;
-}
-.story{
-    background: white;
-    border-radius: 16px;
-}
-.story>img{
-    border-radius: 16px 16px  0px 0px;
-    width: 100%;
-    }
-    /*
-.story h5{
-    margin: 0;
-    font-size: 15px;
-    margin-top: 33px;
-    margin-bottom: 28px;
-    font-weight: bold;
-    line-height: 29px;
-}
-#boro{
-    font-size: 24px;
-    line-height: 38px;
-    margin-top: 58px;
-    margin-bottom: 48px;
-    text-align: left;
-} */
+  
